@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "--dataroot","./datasets/half/202",
+                "--name", "leaf_bn",
+                 "--use_style", "--no_flip" ,"--no_lsgan" ,
+                 "--padding_type", "replicate" ,
+                 "--model","half_style","--which_model_netG","resnet_2x_6blocks", 
+                 "--which_model_netD", "n_layers", "--n_layers_D","4",
+                  "--which_direction", "AtoB", "--lambda_A","100",
+                   "--dataset_mode", "half_crop" ,"--norm","batch", 
+                   "--pool_size", "0", "--resize_or_crop", "no",
+                   "--continue_train" ,
+                    "--niter_decay", "10000", "--niter" ,"10000" ,"--save_epoch_freq" ,"1000",
+                     "--gpu_ids", "1"
+            ]
+        }
+    ]
+    
+}

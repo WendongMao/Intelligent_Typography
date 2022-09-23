@@ -1,0 +1,1 @@
+python train.py --dataroot ./datasets/half/202 --name Gp2 --use_style --no_flip --no_lsgan --padding_type replicate --model half_style --which_model_netG Gp_2  --lambda_A 100 --dataset_mode half_crop --norm batch --resize_or_crop no  --niter_decay 500 --niter 500 --save_epoch_freq 200  --path_model_Gp1 "./checkpoints/leaf_nocas/lemon_10000_net_G.pth" --gpu_ids 2
