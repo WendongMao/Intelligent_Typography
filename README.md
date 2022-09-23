@@ -37,7 +37,7 @@ Please consider citing our paper if you find the software useful for your work.
 - opencv
 - scipy
 - Pillow
-- 
+
 
 #### Install
 - Clone this repo:
