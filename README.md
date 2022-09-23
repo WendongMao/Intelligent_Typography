@@ -67,7 +67,7 @@ git clone https://github.com/WendongMao/Intelligent_Typography.git
 
 - For Artisic text style transfer with default parameters
  ```
- Coarse2fine_transfer.sh
+ sh ./Coarse2fine_transfer.sh
  ```
 
 - For Artisic text style transfer with optional style-scales
@@ -77,7 +77,7 @@ git clone https://github.com/WendongMao/Intelligent_Typography.git
 
 - For relatively simple text styles with alternative inference steps
  ```
- Coarse2fine_altern.sh
+ sh ./Coarse2fine_altern.sh
  ```
 
 
