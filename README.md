@@ -53,11 +53,11 @@ git clone https://github.com/WendongMao/Intelligent_Typography.git
   - Results for Gp, Ns and Nt can be found in `./Gp1_prototype.jpg`,`./Gp2_segmask.jpg`, `./Ns_result.jpg`, `./Nt_results.jpg`
 
 
-```
-python Forward_pro_gen.py \
-python ./Structure_Net/style.py transfer --model-path "./Structure_Net/models/leaf.model" --source "./Gp1_prototype.jpg" --output "./Ns_result.jpg" \
-python ./Texture_Net/texture_refine.py
-```
+ ```
+ python Forward_pro_gen.py \
+ python ./Structure_Net/style.py transfer --model-path "./Structure_Net/models/leaf.model" --source "./Gp1_prototype.jpg" --output "./Ns_result.jpg" \
+ python ./Texture_Net/texture_refine.py
+ ```
 - Artisic text style transfer with specified parameters
   - setting parameters --deforml of Forward_pro_gen.py from 1 to 3,5,7 means testing with multiple scales 
   - specify the input text name, output image path and name with text_name, result_dir and name, respectively
@@ -66,24 +66,24 @@ python ./Texture_Net/texture_refine.py
  or just modifying and running
 
 - For Artisic text style transfer with default parameters
-```
-Coarse2fine_transfer.sh
-```
+ ```
+ Coarse2fine_transfer.sh
+ ```
 
 - For Artisic text style transfer with optional style-scales
-```
-sh ./Coarse2fine_deform.sh
-```
+ ```
+ sh ./Coarse2fine_deform.sh
+ ```
 
 - For relatively simple text styles with alternative inference steps
-```
-Coarse2fine_altern.sh
-```
+ ```
+ Coarse2fine_altern.sh
+ ```
 
 
 ## Training Examples
 
-### Training prototype generation pro-gen GAN
+### Training Prototype Generation Pro-Gen GAN
 ```
 cd ./pro_gen_GAN
 ```
@@ -127,7 +127,7 @@ Saved model can be found at `./models`
 
 
 
-### Try with your own style images
+### Try with Your Own Style images
 ```
 cd ./image_preparation
 ```
