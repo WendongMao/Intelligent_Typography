@@ -47,7 +47,7 @@ git clone https://github.com/WendongMao/Intelligent_Typography.git
 ## Testing Example
 
 - Download pre-trained G_p and N_s models and input images from  [[Baidu Cloud]](https://xxxx)(code:ripi)
-  -Save path of the  pre-trained G_p and N_s: `./pro_gen_GAN/checkpoints/Gp1/`,`./pro_gen_GAN/checkpoints/Gp2/`, `./Structure_Net/models/`,
+  - Save path of the  pre-trained G_p and N_s: `./pro_gen_GAN/checkpoints/Gp1/`,`./pro_gen_GAN/checkpoints/Gp2/`, `./Structure_Net/models/`,
 
 - Artisic text style transfer using default style scale 0.0
   - Results for Gp, Ns and Nt can be found in `./Gp1_prototype.jpg`,`./Gp2_segmask.jpg`, `./Ns_result.jpg`, `./Nt_results.jpg`
@@ -63,7 +63,7 @@ python ./Texture_Net/texture_refine.py
   - specify the input text name, output image path and name with text_name, result_dir and name, respectively
 
 
-or just modifying and running
+ or just modifying and running
 
 - For Artisic text style transfer with default parameters
 ```
@@ -114,9 +114,9 @@ cd ./Structure_Net
 - Train N_S with default parameters
 
  just modifying and running
-```
-sh ../script/launch_ShapeMGAN_structure.sh
-```
+ ```
+ sh ../script/launch_ShapeMGAN_structure.sh
+ ```
 Saved model can be found at `./models`
 
 
@@ -139,7 +139,7 @@ cd ./image_preparation
   - A folder containing global/local images/masks can be generated (`./test_case/202xxx/`), and the degree of mask smoothness can be adjusted by changing the kernel size of gaussian filter.
   - Remove the generated folder(`202xxx/`) into the corresponding datapath `./pro_gen_GAN/datasets/half/`.
   - Noting: For the colour distinct style image, the code uses a threshold to judge the pixel of style image, then obtaining the 
-binary masks. If the style image has complex color distribution, the generated binary mask will be mixed with the background. For these images with complex color, you can extract their binary masks by yourselves, and then replace the generated masks in the  target folder for network training.
+binary masks. If the style image has complex color distribution, the generated binary mask will be mixed with the background. For these images with complex color, you can extract their binary masks by yourselves, and then replace the generated masks in the target folder for network training.
 
 Have fun :-)
 
