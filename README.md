@@ -11,7 +11,7 @@
  <table border="0" width='100%'>
  <tr align="center">
   <td width="25%"><img src= "./tree/master/picture/spring_higres.png" alt=""width="800" ></td>	
-  <td width="40%"><img src= "https://raw.github.com/WendongMao/Intelligent_Typography/tree/master/picture/spring_higres.png"alt="" width="99%" ></td>	
+  <td width="40%"><img src= "https://github.com/WendongMao/Intelligent_Typography/tree/master/picture/spring_higres.png"alt="" width="800" ></td>	
   <td width="35%"><img src="https://raw.github.com/WendongMao/Intelligent_Typography/tree/master/picture/tasty_higres.png" alt="" width="99%" ></td>			
  </tr>					 
  <tr align="center">
