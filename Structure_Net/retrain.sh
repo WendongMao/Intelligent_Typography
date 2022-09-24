@@ -1,1 +1,0 @@
-CUDA_VISIBLE_DEVICES=0 python style.py train --style-image "./style_imgs/leaf2.jpg" --dataset "/home/maowendong/project/style_transfer/preceptual_styletransfer/dataset/leaf_data/" --gpu 0 --visualize 1
