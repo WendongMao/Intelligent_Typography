@@ -51,11 +51,11 @@ git clone https://github.com/WendongMao/Intelligent_Typography.git
 
 
 - Artisic text style transfer using default style-scale 0.0
- ```
- python Forward_pro_gen.py \
- python ./Structure_Net/style.py transfer --model-path "./Structure_Net/models/leaf.model" --source "./Gp1_prototype.jpg" --output "./Ns_result.jpg" \
- python ./Texture_Net/texture_refine.py
- ```
+  ```
+  python Forward_pro_gen.py \
+  python ./Structure_Net/style.py transfer --model-path "./Structure_Net/models/leaf.model" --source "./Gp1_prototype.jpg" --output "./Ns_result.jpg" \
+  python ./Texture_Net/texture_refine.py
+  ```
   - Results for Gp, Ns and Nt can be found in `./Gp1_prototype.jpg`,`./Gp2_segmask.jpg`, `./Ns_result.jpg`, `./Nt_results.jpg`
 
 
