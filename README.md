@@ -49,15 +49,16 @@ git clone https://github.com/WendongMao/Intelligent_Typography.git
 - Download pre-trained G_p and N_s models and input images from  [[Baidu Cloud]](https://xxxx)(code:ripi)
   - Save path of the  pre-trained G_p and N_s: `./pro_gen_GAN/checkpoints/Gp1/`,`./pro_gen_GAN/checkpoints/Gp2/`, `./Structure_Net/models/`,
 
-- Artisic text style transfer using default style scale 0.0
-  - Results for Gp, Ns and Nt can be found in `./Gp1_prototype.jpg`,`./Gp2_segmask.jpg`, `./Ns_result.jpg`, `./Nt_results.jpg`
 
-
+- Artisic text style transfer using default style-scale 0.0
  ```
  python Forward_pro_gen.py \
  python ./Structure_Net/style.py transfer --model-path "./Structure_Net/models/leaf.model" --source "./Gp1_prototype.jpg" --output "./Ns_result.jpg" \
  python ./Texture_Net/texture_refine.py
  ```
+  - Results for Gp, Ns and Nt can be found in `./Gp1_prototype.jpg`,`./Gp2_segmask.jpg`, `./Ns_result.jpg`, `./Nt_results.jpg`
+
+
 - Artisic text style transfer with specified parameters
   - setting parameters --deforml of Forward_pro_gen.py from 1 to 3,5,7 means testing with multiple scales 
   - specify the input text name, output image path and name with text_name, result_dir and name, respectively
