@@ -1,2 +1,2 @@
-python Forward_pro_gen.py --Gp1path "./pro_gen_GAN/checkpoints/leaf_nocas_old/dandelion_17000_net_G.pth"  --picpath "./pro_gen_GAN/inp_preprocess/test_case/202dandelion/train/2.jpg" --tpath "./inp_preprocess/text_mask/ya.jpg" --Gp2path "no_path" --deforml 3 
-python ./Texture_Net/texture_refine.py --picpath "./pro_gen_GAN/inp_preprocess/test_case/202dandelion/train/1.jpg" --Nsopath "./Gp1_prototype.jpg" --Gp2opath "no_path" 
+python Forward_pro_gen.py --Gp1path "./pro_gen_GAN/checkpoints/Gp1/dandelion_17000_net_G.pth"  --picpath "./pro_gen_GAN/image_preparation/test_case/202dandelion/train/2.jpg" --tpath "./image_preparation/text_mask/ya.jpg" --Gp2path "no_path" --deforml 3 
+python ./Texture_Net/texture_refine.py --picpath "./pro_gen_GAN/image_preparation/test_case/202dandelion/train/1.jpg" --Nsopath "./Gp1_prototype.jpg" --Gp2opath "no_path" 
