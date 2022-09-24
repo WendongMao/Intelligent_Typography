@@ -92,7 +92,7 @@ cd ./pro_gen_GAN
 
   just modifying and running
   ```
-  sh ../script/train_Gp1.sh
+  sh ./script/train_Gp1.sh
   ```
 Saved model can be found at `./checkpoints/Gp1`
 
@@ -100,7 +100,7 @@ Saved model can be found at `./checkpoints/Gp1`
 - Train G_p2 with default parameters
   just modifying and running
   ```
-  sh ../script/train_Gp2.sh
+  sh ./script/train_Gp2.sh
   ```
 Saved model can be found at `./checkpoints/Gp2`
 
@@ -115,7 +115,7 @@ cd ./Structure_Net
 
  just modifying and running
  ```
- sh ../script/launch_ShapeMGAN_structure.sh
+ sh train.sh
  ```
 Saved model can be found at `./models`
 
