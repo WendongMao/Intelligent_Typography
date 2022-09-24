@@ -2,7 +2,7 @@
 
 <table border="0" width='100%'>
  <tr align="center">	
-  <td width="18.6%"><img src="https://github.com/WendongMao/Intelligent_Typography/picture/example.png" width="99%" ></td>
+  <td width="18.6%"><img src="https://github.com/WendongMao/Intelligent_Typography/tree/master/picture/example.png" width="99%" ></td>
  </tr>
  <tr align="center">
   <td> Generated diverse artistic texts via the proposed framework
