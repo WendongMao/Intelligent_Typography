@@ -1,5 +1,10 @@
 # Artistic Text Style Transfer for Complex Texture and Structure
 
+<p align="center">
+    <img src="tree/master/picture/example.png", height="400">
+</p>
+
+
 <table border="0" width='90%'>
  <tr align="center">	
   <td width="18.6%"><img src="https://github.com/WendongMao/Intelligent_Typography/tree/master/picture/example.png" width="99%" ></td>
