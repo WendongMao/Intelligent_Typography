@@ -25,7 +25,7 @@ class TrainOptions(BaseOptions):
         self.parser.add_argument('--no_html', action='store_true', help='do not save intermediate training results to [opt.checkpoints_dir]/[opt.name]/web/')
         self.parser.add_argument('--N_CRITIC', type=int, default=5,
                                  help='train D with N_CRITIC, then train G once')
-        self.parser.add_argument('--padding_type', type=str, default='reflect',
+        self.parser.add_argument('--padding_type', type=str, default='replicate',
                                  help='default padding type for first and last conv of generator')
         self.parser.add_argument('--use_style', action='store_true', help='if specified, use specified style for training')
         self.isTrain = True
