@@ -12,9 +12,9 @@
  </table>
  <table border="0" width='100%'>
  <tr align="center">
-  <td width="30%"><img src= "./picture/love_higres.png" alt=""width="800" ></td>	
   <td width="35%"><img src= "./picture/spring_higres.png"alt="" width="800" ></td>	
-  <td width="35%"><img src="./picture/tasty_higres.png" alt="" width="99%" ></td>			
+  <td width="29%"><img src= "./picture/love_higres.png" alt=""width="800" ></td>	
+  <td width="36%"><img src="./picture/tasty_higres.png" alt="" width="99%" ></td>			
  </tr>					 
  <tr align="center">
 </tr>	
