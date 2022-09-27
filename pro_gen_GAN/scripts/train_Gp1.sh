@@ -1,1 +1,1 @@
-python train.py --dataroot ./datasets/half/202 --name Gp1 --use_style --no_flip --no_lsgan --padding_type replicate --model half_style --which_model_netG Gp_1 --which_model_netD n_layers --n_layers_D 4 --which_direction AtoB --lambda_A 100 --dataset_mode half_crop  --resize_or_crop no  --niter_decay 5000 --niter 10000 --save_epoch_freq 1000 --gpu_ids 0
+python train.py --dataroot ./datasets/half/202 --name Gp1 --use_style --no_flip --no_lsgan --model half_style --which_model_netG Gp_1 --lambda_A 100  --niter_decay 5000 --niter 10000 --save_epoch_freq 1000 --gpu_ids 0
