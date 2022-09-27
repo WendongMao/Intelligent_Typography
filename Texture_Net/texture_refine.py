@@ -65,7 +65,7 @@ class StyleTransfer:
     def process_img1(self,img_path):
         img = Image.open(img_path)
         self.img_ncols, self.img_nrows = img.size
-        img = img.crop((self.img_ncols/2-325,self.img_nrows/2-325,self.img_ncols/2+325,self.img_nrows/2+325))
+        img = img.crop((self.img_ncols/2-315,self.img_nrows/2-315,self.img_ncols/2+315,self.img_nrows/2+315))
         img_name  = img_path.split('/')[-1][:-4]
         loader = transforms.Compose([transforms.Resize((self.img_nrows,self.img_ncols)),
         transforms.ToTensor()])
