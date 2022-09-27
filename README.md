@@ -64,7 +64,7 @@ git clone https://github.com/WendongMao/Intelligent_Typography.git
 ## Testing Example
 
 - Download pre-trained G_p and N_s models and input images from  [[Baidu Cloud]](https://xxxx)(code:ripi)
-  - Save path of the  pre-trained G_p and N_s: `./pro_gen_GAN/checkpoints/Gp1/`,`./pro_gen_GAN/checkpoints/Gp2/`, `./Structure_Net/models/`,
+  - Load the pre-trained G_p and N_s into the paths: `./pro_gen_GAN/checkpoints/Gp1/`,`./pro_gen_GAN/checkpoints/Gp2/`, `./Structure_Net/models/`,
 
 
 - Artisic text style transfer using default style-scale 0.0
