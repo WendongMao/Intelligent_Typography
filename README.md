@@ -69,15 +69,22 @@ git clone https://github.com/WendongMao/Intelligent_Typography.git
 
 - Artisic text style transfer using default style-scale 0.0
   ```
-  python Forward_pro_gen.py \
-  python ./Structure_Net/style.py transfer --model-path "./Structure_Net/models/leaf.model" --source "./Gp1_prototype.jpg" --output "./Ns_result.jpg" \
-  python ./Texture_Net/texture_refine.py
+  python Forward_pro_gen.py --Gp1path "XXX"  --picpath "XXX" --tpath "XX" --Gp2path "XXh" --deforml X \
+  python ./Structure_Net/style.py transfer --model-path "XXX" --source "./Gp1_prototype.jpg" --output "./Ns_result.jpg" \
+  python ./Texture_Net/texture_refine.py --picpath "XXX"  
+  ```
+   - where Gp1path and Gp2path represent the pre-trained model paths for Gp1 and Gp2, picpath denotes the data path of style image, and tpath implies the data path of text mask.
+ eg.
+  ```
+  python Forward_pro_gen.py \ --Gp1path "./pro_gen_GAN/checkpoints/leaf_nocas_old/ink_8000_net_G.pth"  --picpath "./pro_gen_GAN/image_preparation/test_case/202ink/train/2.jpg" --tpath "./inp_preprocess/text_mask/mo.jpg" --Gp2path "no_path" --deforml 0
+  python ./Structure_Net/style.py transfer --model-path "./Structure_Net/models/ink.model" --source "./Gp1_prototype.jpg" --output "./Ns_result.jpg" \
+  python ./Texture_Net/texture_refine.py  --picpath "./pro_gen_GAN/inp_preprocess/test_case/202dandelion/train/1.jpg"
   ```
   - Results for Gp, Ns and Nt can be found in `./Gp1_prototype.jpg`,`./Gp2_segmask.jpg`, `./Ns_result.jpg`, `./Nt_results.jpg`
 
 
 - Artisic text style transfer with specified parameters
-  - setting parameters --deforml of Forward_pro_gen.py from 1 to 3,5,7 means testing with multiple scales 
+  - setting parameters --deforml of Forward_pro_gen.py from 0 to 1,2,3,4 means testing with multiple scales 
   - specify the input text name, output image path and name with text_name, result_dir and name, respectively
 
 
