@@ -75,7 +75,7 @@ git clone https://github.com/WendongMao/Intelligent_Typography.git
   ```
    - where `Gp1path` and `Gp2path` represent the pre-trained model paths for Gp1 and Gp2, `picpath` denotes the data path of style image, and `tpath` implies the data path of text mask. Eg:
   ```
-  python Forward_pro_gen.py --Gp1path "./pro_gen_GAN/checkpoints/Gp1/ink_8000_net_G.pth"  --picpath "./pro_gen_GAN/image_preparation/test_case/202ink/train/2.jpg" --tpath "./inp_preprocess/text_mask/mo.jpg" --Gp2path "no_path" --deforml 0 \
+  python Forward_pro_gen.py --Gp1path "./pro_gen_GAN/checkpoints/Gp1/ink_8000_net_G.pth"  --picpath "./pro_gen_GAN/image_preparation/test_case/202ink/train/2.jpg" --tpath "./image_preparation/text_mask/mo.jpg" --Gp2path "./pro_gen_GAN/checkpoints/Gp1/ink_8000_net_G.pth" --deforml 0 \
   python ./Structure_Net/style.py transfer --model-path "./Structure_Net/models/ink.model" --source "./Gp1_prototype.jpg" --output "./Ns_result.jpg" \
   python ./Texture_Net/texture_refine.py  --picpath "./pro_gen_GAN/image_preparation/test_case/202ink/train/1.jpg"
   ```
