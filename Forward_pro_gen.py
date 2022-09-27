@@ -254,10 +254,10 @@ def binary_text(filename_textimg,gan_out_path,mask):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--Gp1path", type=str, default="./pro_gen_GAN/checkpoints/leaf_nocas/honghua_15000_net_G.pth", help="path to a pretrain model of Gp1")
-    parser.add_argument("--picpath", type=str, default="./pro_gen_GAN/inp_preprocess/test_case/202honghua/train/2.jpg", help="path to a style image")
-    parser.add_argument("--tpath", type=str, default= "./inp_preprocess/text_mask/love.jpg", help="path to an input text mask")
-    parser.add_argument("--Gp2path", type=str, default="./pro_gen_GAN/checkpoints/Gp2/honghua_850_net_G.pth", help="path to a pretrain model of Gp2")
+    parser.add_argument("--Gp1path", type=str, default="./pro_gen_GAN/checkpoints/Gp1/ink_k9_8000_net_G.pth", help="path to a pretrain model of Gp1")
+    parser.add_argument("--picpath", type=str, default="./image_preparation/test_case/202ink/train/2.jpg", help="path to a style image")
+    parser.add_argument("--tpath", type=str, default= "./image_preparation/text_mask/mo.jpg", help="path to an input text mask")
+    parser.add_argument("--Gp2path", type=str, default="./pro_gen_GAN/checkpoints/Gp2/ink_800_net_G.pth", help="path to a pretrain model of Gp2")
     parser.add_argument("--deforml", type=int, default=0, help="The deformable level of style transfer")
     args = parser.parse_args() 
 
