@@ -166,7 +166,7 @@ cd ./image_preparation
   python make_restdir.py
   ```
   - A folder containing global/local images/masks can be generated (`./test_case/202xxx/`), and the degree of mask smoothness can be adjusted by changing the kernel size of gaussian filter. the directory & file structure like this:
-  '''
+  ```
   |---test
   |   └───textname_stylename.jpg
   |---train
@@ -178,7 +178,7 @@ cd ./image_preparation
   |---mask1.jpg
   |---mask2_O.jpg
   |---mask2.jpg
-  '''
+  ```
   - Remove the generated folder(`202xxx/`) into the corresponding datapath `./pro_gen_GAN/datasets/half/`.
   - Noting: For the colour distinct style image, the code uses a threshold to judge the pixel of style image, then obtaining the 
 binary masks. If the style image has complex color distribution, the generated binary mask will be mixed with the background. For these images with complex color, you can extract their binary masks by yourselves, and then replace the generated masks in the target folder for network training.
