@@ -165,7 +165,7 @@ cd ./image_preparation
   ```
   python make_restdir.py
   ```
-  - A folder containing global/local images/masks can be generated (`./test_case/202xxx/`), and the degree of mask smoothness can be adjusted by changing the kernel size of gaussian filter. the directory & file structure like this:
+  - A folder containing global/local images/masks can be generated (`./test_case/202xxx/`), and the degree of mask smoothness can be adjusted by changing the kernel size of gaussian filter. The directory & file structure is like this:
   ```
   |---test
   |   └───textname_stylename.jpg
