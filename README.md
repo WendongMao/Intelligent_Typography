@@ -161,11 +161,24 @@ Saved model can be found at `./models`
 cd ./image_preparation
 ```
 - Style image preparation for network training
-  - Put the style image and text mask into the corresponding folders: `./style_img/` and `./text_mask/`.
+  - Put the style images and text mask into the corresponding folders: `./style_img/` and `./text_mask/`. Name the style image as XXX1 and XXX2, (Eg. leaf1 and leaf2), where leaf1 is global style image and leaf2 is local style image.
   ```
   python make_restdir.py
   ```
-  - A folder containing global/local images/masks can be generated (`./test_case/202xxx/`), and the degree of mask smoothness can be adjusted by changing the kernel size of gaussian filter.
+  - A folder containing global/local images/masks can be generated (`./test_case/202xxx/`), and the degree of mask smoothness can be adjusted by changing the kernel size of gaussian filter. the directory & file structure like this:
+  '''
+  |---test
+  |   └───textname_stylename.jpg
+  |---train
+  |  └───1.jpg
+  |  └───2.jpg
+  |---label
+  |  └───la_muse
+  |---mask1_O.jpg
+  |---mask1.jpg
+  |---mask2_O.jpg
+  |---mask2.jpg
+  '''
   - Remove the generated folder(`202xxx/`) into the corresponding datapath `./pro_gen_GAN/datasets/half/`.
   - Noting: For the colour distinct style image, the code uses a threshold to judge the pixel of style image, then obtaining the 
 binary masks. If the style image has complex color distribution, the generated binary mask will be mixed with the background. For these images with complex color, you can extract their binary masks by yourselves, and then replace the generated masks in the target folder for network training.
