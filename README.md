@@ -173,7 +173,7 @@ cd ./image_preparation
   |  └───1.jpg
   |  └───2.jpg
   |---label
-  |  └───la_muse
+  |  └───dismap.jpg
   |---mask1_O.jpg
   |---mask1.jpg
   |---mask2_O.jpg
