@@ -38,7 +38,7 @@ This is a pytorch implementation of the paper.
 
 Wendong Mao, Shuai Yang; Huihong Shi, Jiaying Liu, and Zhongfeng Wang,  "Intelligent Typography: Artistic Text Style Transfer for Complex Texture and Structure"  in IEEE Transactions on Multimedia: Regular Paper, 2022.
 
-[[Paper]](XXXxxxxxx) | More about artistic text style transfer 
+[[Paper]](https://ieeexplore.ieee.org/abstract/document/9906917) | More about artistic text style transfer 
 
 Please consider citing our paper if you find the software useful for your work.
 
