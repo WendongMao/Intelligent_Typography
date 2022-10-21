@@ -152,7 +152,7 @@ Saved model can be found at `./models`
 ### Texture Refinement N_t
 
 - N_t uses a pretrained VGG and does not require training
-  - Download pre-trained VGG19 from  [[Baidu Cloud]](https://pan.baidu.com/s/1SsgvvT5nKKiGTyr2xHpveQ)(code:w4v9) 
+  - Download pre-trained VGG19 from  [[Baidu Cloud]](https://pan.baidu.com/s/1SsgvvT5nKKiGTyr2xHpveQ)(code:w4v9), and load into the path:`./Texture_Net`
 
 
 
