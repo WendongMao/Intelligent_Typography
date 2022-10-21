@@ -63,9 +63,9 @@ git clone https://github.com/WendongMao/Intelligent_Typography.git
 ```
 ## Testing Example
 
-- Download pre-trained G_p and N_s models and input images from  [[Baidu Cloud]](https://xxxx)(code:ripi)
+- Download pre-trained G_p and N_s models and input images from  [[Baidu Cloud]](https://pan.baidu.com/s/1yzljdGDoJCPxDKsQetp2qA)(code:lglo)
   - Load the pre-trained G_p and N_s into the paths: `./pro_gen_GAN/checkpoints/Gp1/`,`./pro_gen_GAN/checkpoints/Gp2/`, `./Structure_Net/models/`,
-
+- Download pre-trained VGG model from  [[Baidu Cloud]](https://pan.baidu.com/s/1vUBiAvUV8qq9vgtObifIAw)(code:yxto) , and load into the path: `./pro_gen_GAN/Models/`
 
 - Artisic text style transfer using default style-scale 0.0
   ```
@@ -111,7 +111,7 @@ git clone https://github.com/WendongMao/Intelligent_Typography.git
 ```
 cd ./pro_gen_GAN
 ```
-- Download style images from  [[Baidu Cloud]](https://xxxxx)(code:rjpi) to `./pro_gen_GAN/datasets/half/`
+- Download style images from  [[Baidu Cloud]](https://pan.baidu.com/s/1yzljdGDoJCPxDKsQetp2qA)(code:lglo) to `./pro_gen_GAN/datasets/half/`
 - Train G_p1 with default parameters
 
   just modifying and running
@@ -152,7 +152,7 @@ Saved model can be found at `./models`
 ### Texture Refinement N_t
 
 - N_t uses a pretrained VGG and does not require training
-  - Download pre-trained VGG model from  [[Baidu Cloud]](https://xxx)(code:rjpi) 
+  - Download pre-trained VGG19 from  [[Baidu Cloud]](https://pan.baidu.com/s/1SsgvvT5nKKiGTyr2xHpveQ)(code:w4v9) 
 
 
 
